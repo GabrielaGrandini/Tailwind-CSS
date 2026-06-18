@@ -1,25 +1,11 @@
 # PetsCare
 
-## 1. Apresentação do Projeto
+# 1. Apresentação do Projeto
 
-### PetsCare
+## PetShop - PetsCare
+O PetsCare é um aplicação web desenvolvido para a simulação de um pet shop. Ela contém cadastro e gerenciamento de produtos, categorias, usuários, pedidos e itens do carrinho de compras, oferecendo uma experiência completa tanto para clientes quanto para administradores.
 
-O PetsCare é uma aplicação web desenvolvida para simular o funcionamento de um pet shop, oferecendo recursos para clientes e administradores.
-
-O sistema permite o gerenciamento de produtos, categorias, usuários, carrinho de compras e pedidos, proporcionando uma experiência completa de compra online para produtos destinados a animais de estimação.
-
-Entre as principais funcionalidades estão:
-
-* Cadastro e autenticação de usuários;
-* Recuperação de senha;
-* Cadastro e gerenciamento de categorias;
-* Cadastro e gerenciamento de produtos;
-* Upload de imagens para produtos;
-* Carrinho de compras;
-* Controle de estoque;
-* Registro e acompanhamento de pedidos;
-* Área administrativa;
-* Responsividade para dispositivos móveis.
+Entre as principais funcionalidades estão a autenticação de usuários, gerenciamento de estoque, controle de pedidos, carrinho de compras e uma área administrativa.
 
 ---
 
@@ -152,8 +138,34 @@ http://localhost:8080
 ```
 
 ---
+# 6. Endpoints da API
+## Categorias
+**GET** /api/categorias
+**POST** /api/categorias
+**PUT** /api/categorias/{id}
+**DELETE** /api/categorias/{id}
 
-## 6. Principais Funcionalidades
+## Produtos
+**GET** /api/produtos
+**GET** /api/produtos/categoria/{id}
+**POST** /api/produtos
+**DELETE** /api/produtos/{id}
+
+## Usuários
+**GET** /api/usuarios
+**POST** /api/usuarios
+**PUT** /api/usuarios/{id}
+**DELETE** /api/usuarios/{id}
+
+## Carrinho
+**POST** /api/carrinho/adicionar
+**GET** /api/carrinho/{idPedido}
+
+## Pedidos
+**GET** /api/pedidos
+**GET** /api/pedidos/carrinho/{idUsuario}
+ 
+## 7. Principais Funcionalidades
 
 * Cadastro de usuários;
 * Login e autenticação;
@@ -173,7 +185,7 @@ http://localhost:8080
 
 ---
 
-## 7. Desenvolvedora
+## 8. Desenvolvedora
 
 Gabriela Grandini do Prado
 
